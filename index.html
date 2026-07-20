@@ -3,205 +3,1098 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="PCUN Youth Forum 2026: Motivation and Mobilization, a forthcoming event on psychology, youth leadership, collective action, belonging, innovation, and well-being.">
+  <meta
+    name="description"
+    content="PCUN Youth Forum 2026: Motivation and Mobilization, organized by the SPSSI United Nations NGO Team."
+  >
   <title>PCUN Youth Forum 2026</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+    rel="stylesheet"
+  >
+
   <style>
-    :root{--navy:#17345f;--navy-dark:#0c2340;--blue:#315e9f;--gold:#c5a24a;--gold-soft:#f1e6bd;--sky:#eaf1f8;--cream:#fbfaf6;--surface:#fff;--ink:#152033;--muted:#5f6876;--border:#d8dee8;--focus:#b47b00;--content:74rem;--radius:18px;--shadow:0 18px 45px rgba(12,35,64,.10);--header-h:5rem}
-    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 1rem)}
-    body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;overflow-x:hidden}
-    a{color:var(--navy);text-underline-offset:.2em} a:hover{color:var(--blue)}
-    :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
-    .skip-link{position:fixed;top:.75rem;left:.75rem;z-index:10000;transform:translateY(-180%);padding:.75rem 1rem;background:var(--navy-dark);color:white;text-decoration:none;border-radius:8px}
-    .skip-link:focus{transform:translateY(0)}
-    .container{width:min(calc(100% - 3rem),var(--content));margin-inline:auto}
-    section{padding-block:clamp(4.5rem,8vw,7.5rem)}
-    h1,h2,h3{margin-top:0;font-family:"Source Serif 4",Georgia,serif;color:var(--navy-dark);line-height:1.08}
-    h1{margin-bottom:1.25rem;font-size:clamp(3rem,7vw,6.4rem);max-width:12ch}
-    h2{margin-bottom:1rem;font-size:clamp(2.2rem,4.5vw,4rem)}
-    h3{margin-bottom:.7rem;font-size:clamp(1.4rem,2vw,1.8rem)}
-    p{margin-top:0}
-    .eyebrow{margin-bottom:.9rem;color:var(--blue);font-size:.85rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-    .site-header{position:sticky;top:0;z-index:1000;min-height:var(--header-h);background:rgba(251,250,246,.95);border-bottom:1px solid rgba(23,52,95,.12);backdrop-filter:blur(12px)}
-    .header-inner{min-height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
-    .brand{display:inline-flex;align-items:center;gap:.8rem;color:var(--navy-dark);font-weight:700;text-decoration:none}
-    .brand-mark{display:grid;width:2.35rem;height:2.35rem;place-items:center;border-radius:50%;background:var(--navy);color:white;font-family:"Source Serif 4",Georgia,serif;font-size:1.05rem}
-    .site-nav{display:flex;align-items:center;gap:1.7rem}
-    .site-nav a{color:var(--ink);font-weight:600;text-decoration:none}
-    .button,.site-nav .nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-height:3rem;padding:.8rem 1.2rem;border:2px solid transparent;border-radius:999px;font-weight:700;text-decoration:none;transition:transform 180ms ease,box-shadow 180ms ease,background 180ms ease}
-    .button:hover,.site-nav .nav-cta:hover{transform:translateY(-2px)}
-    .button-primary,.site-nav .nav-cta{background:var(--navy);color:white;box-shadow:0 10px 25px rgba(23,52,95,.16)}
-    .button-primary:hover,.site-nav .nav-cta:hover{background:var(--navy-dark);color:white}
-    .button-secondary{border-color:var(--navy);color:var(--navy);background:transparent}
-    .menu-toggle{display:none;width:3rem;height:3rem;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--navy-dark);font-size:1.4rem;cursor:pointer}
-    .hero{position:relative;overflow:hidden;padding-block:clamp(5rem,10vw,9rem);background:radial-gradient(circle at 90% 10%,rgba(197,162,74,.20),transparent 25%),linear-gradient(180deg,#fdfcf8 0%,#f5f7fb 100%)}
-    .hero::after{content:"";position:absolute;right:-8rem;bottom:-9rem;width:26rem;height:26rem;border:1px solid rgba(49,94,159,.16);border-radius:50%;box-shadow:0 0 0 3rem rgba(49,94,159,.05),0 0 0 6rem rgba(197,162,74,.04);pointer-events:none}
-    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(18rem,.6fr);gap:clamp(3rem,7vw,7rem);align-items:center}
-    .hero-subtitle{max-width:42rem;margin-bottom:1.4rem;color:var(--muted);font-size:clamp(1.1rem,1.8vw,1.35rem)}
-    .event-meta{display:grid;gap:.75rem;margin-block:1.75rem 2rem}
-    .meta-row{display:flex;align-items:flex-start;gap:.8rem;color:var(--ink)}
-    .meta-icon{flex:0 0 auto;display:grid;width:2rem;height:2rem;place-items:center;border-radius:50%;background:var(--gold-soft);color:var(--navy);font-weight:700}
-    .button-row{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
-    .hero-note{margin-top:1rem;max-width:38rem;color:var(--muted);font-size:.95rem}
-    .hero-art{min-height:28rem;display:grid;place-items:center}
-    .globe-card{position:relative;width:min(100%,24rem);aspect-ratio:1/1;display:grid;place-items:center;border:1px solid rgba(23,52,95,.14);border-radius:50%;background:rgba(255,255,255,.78);box-shadow:var(--shadow)}
-    .globe-card::before,.globe-card::after{content:"";position:absolute;border-radius:50%}
-    .globe-card::before{inset:11%;border:2px solid rgba(49,94,159,.32)}
-    .globe-card::after{width:58%;height:58%;border:2px solid rgba(197,162,74,.5)}
-    .globe-wordmark{position:relative;z-index:2;text-align:center}
-    .globe-wordmark strong{display:block;color:var(--navy-dark);font-family:"Source Serif 4",Georgia,serif;font-size:clamp(2.4rem,5vw,4rem);line-height:.95}
-    .globe-wordmark span{display:block;margin-top:.8rem;color:var(--blue);font-size:.9rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-    .about{background:var(--surface)}
-    .about-grid{display:grid;grid-template-columns:minmax(13rem,.55fr) minmax(0,1.45fr);gap:clamp(2.5rem,6vw,5rem)}
-    .about-copy{font-size:1.12rem}
-    .themes{background:var(--sky)}
-    .section-heading{max-width:48rem;margin-bottom:2.5rem}
-    .section-heading.centered{margin-inline:auto;text-align:center}
-    .section-heading p:last-child{color:var(--muted)}
-    .theme-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1rem}
-    .theme-card{grid-column:span 2;min-height:15rem;padding:1.6rem;border-top:4px solid var(--gold);border-radius:var(--radius);background:var(--surface);box-shadow:0 10px 28px rgba(12,35,64,.06)}
-    .theme-card:nth-child(4),.theme-card:nth-child(5){grid-column:span 3}
-    .theme-number{display:inline-grid;width:2.8rem;height:2.8rem;place-items:center;margin-bottom:1rem;border-radius:50%;background:var(--gold-soft);color:var(--navy);font-weight:700}
-    .theme-card p{margin-bottom:0;color:var(--muted)}
-    .participation{background:var(--cream)}
-    .audience-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem}
-    .audience-item{padding:1.3rem;border:1px solid var(--border);border-radius:14px;background:var(--surface);font-weight:600;text-align:center}
-    .updates{background:var(--navy-dark);color:white}
-    .updates h2,.updates h3{color:white}
-    .updates-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(18rem,.75fr);gap:clamp(2rem,6vw,5rem);align-items:center}
-    .updates p{color:#dce5f1;font-size:1.1rem}
-    .status-card{padding:1.7rem;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);background:rgba(255,255,255,.07)}
-    .status-card strong{display:block;margin-bottom:.5rem;color:var(--gold-soft);font-size:1rem;text-transform:uppercase;letter-spacing:.08em}
-    .partners{background:var(--surface)}
-    .partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
-    .partner-card{padding:1.5rem;border:1px solid var(--border);border-radius:14px;background:var(--cream)}
-    .partner-card p{margin-bottom:0;color:var(--muted)}
-    .contact-panel{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border);color:var(--muted)}
-    .site-footer{padding-block:2rem;background:var(--navy-dark);color:#dce5f1}
-    .footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
-    .footer-inner p{margin:0}
-    @media(max-width:62rem){
-      :root{--header-h:4.5rem}
-      .menu-toggle{display:inline-flex}
-      .site-nav{position:absolute;top:100%;left:0;right:0;display:none;padding:1rem 1.5rem 1.4rem;flex-direction:column;align-items:stretch;background:var(--cream);border-bottom:1px solid var(--border);box-shadow:0 16px 30px rgba(12,35,64,.10)}
-      .site-nav.is-open{display:flex}.site-nav a{padding:.55rem 0}.site-nav .nav-cta{margin-top:.25rem}
-      .hero-grid,.about-grid,.updates-grid{grid-template-columns:1fr}
-      .hero-art{min-height:auto}.globe-card{width:min(75vw,21rem)}
-      .theme-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .theme-card,.theme-card:nth-child(4),.theme-card:nth-child(5){grid-column:auto}
-      .audience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    :root {
+      --navy: #17345f;
+      --navy-dark: #0c2340;
+      --blue: #315e9f;
+      --gold: #c5a24a;
+      --gold-soft: #f1e6bd;
+      --sky: #edf3f9;
+      --cream: #fbfaf6;
+      --surface: #ffffff;
+      --ink: #152033;
+      --muted: #5f6876;
+      --border: #d8dee8;
+      --focus: #b47b00;
+      --content: 74rem;
+      --radius: 18px;
+      --shadow: 0 18px 45px rgba(12, 35, 64, 0.10);
+      --header-height: 5rem;
     }
-    @media(max-width:44rem){
-      .container{width:min(calc(100% - 2rem),var(--content))}
-      section{padding-block:4.25rem}.brand-text{font-size:.95rem}.hero{padding-top:4.5rem}
-      .button-row{align-items:stretch}.button{width:100%}
-      .theme-grid,.audience-grid,.partner-grid{grid-template-columns:1fr}
-      .theme-card{min-height:0}.footer-inner{flex-direction:column}
+
+    * {
+      box-sizing: border-box;
     }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + 1rem);
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "DM Sans", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--navy);
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--blue);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 10000;
+      transform: translateY(-180%);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      background: var(--navy-dark);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(calc(100% - 3rem), var(--content));
+      margin-inline: auto;
+    }
+
+    section {
+      padding-block: clamp(4.5rem, 8vw, 7.5rem);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      color: var(--navy-dark);
+      font-family: "Source Serif 4", Georgia, serif;
+      line-height: 1.08;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin-bottom: 1rem;
+      font-size: clamp(3rem, 7vw, 6.4rem);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: clamp(2.2rem, 4.5vw, 4rem);
+    }
+
+    h3 {
+      margin-bottom: 0.55rem;
+      font-size: clamp(1.35rem, 2vw, 1.8rem);
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .eyebrow {
+      margin-bottom: 0.9rem;
+      color: var(--blue);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      min-height: var(--header-height);
+      border-bottom: 1px solid rgba(23, 52, 95, 0.12);
+      background: rgba(251, 250, 246, 0.95);
+      backdrop-filter: blur(12px);
+    }
+
+    .header-inner {
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--navy-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 2.35rem;
+      height: 2.35rem;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #ffffff;
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 1.05rem;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.7rem;
+    }
+
+    .site-nav a {
+      color: var(--ink);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .site-nav a:hover {
+      color: var(--blue);
+    }
+
+    .button,
+    .site-nav .nav-cta {
+      display: inline-flex;
+      min-height: 3rem;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 0.8rem 1.2rem;
+      border: 2px solid transparent;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        background 180ms ease;
+    }
+
+    .button:hover,
+    .site-nav .nav-cta:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary,
+    .site-nav .nav-cta {
+      background: var(--navy);
+      color: #ffffff;
+      box-shadow: 0 10px 25px rgba(23, 52, 95, 0.16);
+    }
+
+    .button-primary:hover,
+    .site-nav .nav-cta:hover {
+      background: var(--navy-dark);
+      color: #ffffff;
+    }
+
+    .button-secondary {
+      border-color: var(--navy);
+      background: transparent;
+      color: var(--navy);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 3rem;
+      height: 3rem;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface);
+      color: var(--navy-dark);
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding-block: clamp(5rem, 10vw, 9rem);
+      background:
+        radial-gradient(circle at 90% 10%, rgba(197, 162, 74, 0.20), transparent 25%),
+        linear-gradient(180deg, #fdfcf8 0%, #f5f7fb 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -8rem;
+      bottom: -9rem;
+      width: 26rem;
+      height: 26rem;
+      border: 1px solid rgba(49, 94, 159, 0.16);
+      border-radius: 50%;
+      box-shadow:
+        0 0 0 3rem rgba(49, 94, 159, 0.05),
+        0 0 0 6rem rgba(197, 162, 74, 0.04);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.6fr);
+      gap: clamp(3rem, 7vw, 7rem);
+      align-items: center;
+    }
+
+    .hero-subtitle {
+      max-width: 42rem;
+      margin-bottom: 0.75rem;
+      color: var(--muted);
+      font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+    }
+
+    .organizer-line {
+      margin-bottom: 1.5rem;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .hero-summary {
+      max-width: 43rem;
+    }
+
+    .event-meta {
+      display: grid;
+      gap: 0.75rem;
+      margin-block: 1.75rem 2rem;
+    }
+
+    .meta-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      color: var(--ink);
+    }
+
+    .meta-icon {
+      flex: 0 0 auto;
+      display: grid;
+      width: 2rem;
+      height: 2rem;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--gold-soft);
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      align-items: center;
+    }
+
+    .hero-note {
+      max-width: 38rem;
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero-art {
+      min-height: 28rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .globe-card {
+      position: relative;
+      width: min(100%, 24rem);
+      aspect-ratio: 1 / 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(23, 52, 95, 0.14);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: var(--shadow);
+    }
+
+    .globe-card::before,
+    .globe-card::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .globe-card::before {
+      inset: 11%;
+      border: 2px solid rgba(49, 94, 159, 0.32);
+    }
+
+    .globe-card::after {
+      width: 58%;
+      height: 58%;
+      border: 2px solid rgba(197, 162, 74, 0.5);
+    }
+
+    .globe-wordmark {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .globe-wordmark strong {
+      display: block;
+      color: var(--navy-dark);
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 0.95;
+    }
+
+    .globe-wordmark span {
+      display: block;
+      margin-top: 0.8rem;
+      color: var(--blue);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .about {
+      background: var(--surface);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(13rem, 0.55fr) minmax(0, 1.45fr);
+      gap: clamp(2.5rem, 6vw, 5rem);
+    }
+
+    .about-copy {
+      font-size: 1.12rem;
+    }
+
+    .themes {
+      background: var(--sky);
+    }
+
+    .section-heading {
+      max-width: 48rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-heading.centered {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-heading p:last-child {
+      color: var(--muted);
+    }
+
+    .theme-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: clamp(2rem, 6vw, 5rem);
+      border-top: 1px solid rgba(23, 52, 95, 0.18);
+    }
+
+    .theme-item {
+      display: grid;
+      grid-template-columns: 3rem minmax(0, 1fr);
+      gap: 1rem;
+      align-items: start;
+      padding-block: 1.65rem;
+      border-bottom: 1px solid rgba(23, 52, 95, 0.18);
+    }
+
+    .theme-number {
+      display: grid;
+      width: 2.3rem;
+      height: 2.3rem;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--gold-soft);
+      color: var(--navy);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .theme-item h3 {
+      margin-bottom: 0.25rem;
+      font-size: clamp(1.25rem, 2vw, 1.65rem);
+    }
+
+    .theme-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    .theme-item:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .participation {
+      background: var(--cream);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .audience-item {
+      padding: 1.3rem;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .updates {
+      background: var(--navy-dark);
+      color: #ffffff;
+    }
+
+    .updates h2,
+    .updates h3 {
+      color: #ffffff;
+    }
+
+    .updates-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+      gap: clamp(2rem, 6vw, 5rem);
+      align-items: center;
+    }
+
+    .updates p {
+      color: #dce5f1;
+      font-size: 1.1rem;
+    }
+
+    .status-card {
+      padding: 1.7rem;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .status-card strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--gold-soft);
+      font-size: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .organizers {
+      background: var(--surface);
+    }
+
+    .organizer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+      gap: clamp(2rem, 6vw, 5rem);
+      align-items: start;
+    }
+
+    .organizer-panel {
+      padding: clamp(1.6rem, 3vw, 2.2rem);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--cream);
+    }
+
+    .organizer-panel h3 {
+      margin-bottom: 0.35rem;
+    }
+
+    .organizer-role {
+      margin-bottom: 1rem;
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    .organizer-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .partner-list {
+      display: grid;
+      gap: 1.15rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .partner-list li {
+      padding-bottom: 1.15rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .partner-list li:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .partner-label {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .contact-panel {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .site-footer {
+      padding-block: 2rem;
+      background: var(--navy-dark);
+      color: #dce5f1;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .footer-inner p {
+      margin: 0;
+    }
+
+    @media (max-width: 62rem) {
+      :root {
+        --header-height: 4.5rem;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .site-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 1rem 1.5rem 1.4rem;
+        flex-direction: column;
+        align-items: stretch;
+        border-bottom: 1px solid var(--border);
+        background: var(--cream);
+        box-shadow: 0 16px 30px rgba(12, 35, 64, 0.10);
+      }
+
+      .site-nav.is-open {
+        display: flex;
+      }
+
+      .site-nav a {
+        padding: 0.55rem 0;
+      }
+
+      .site-nav .nav-cta {
+        margin-top: 0.25rem;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .updates-grid,
+      .organizer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-art {
+        min-height: auto;
+      }
+
+      .globe-card {
+        width: min(75vw, 21rem);
+      }
+
+      .audience-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 44rem) {
+      .container {
+        width: min(calc(100% - 2rem), var(--content));
+      }
+
+      section {
+        padding-block: 4.25rem;
+      }
+
+      .brand-text {
+        font-size: 0.95rem;
+      }
+
+      .hero {
+        padding-top: 4.5rem;
+      }
+
+      .button-row {
+        align-items: stretch;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .theme-list,
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .theme-item:last-child {
+        grid-column: auto;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
+
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="PCUN Youth Forum home">
         <span class="brand-mark" aria-hidden="true">Ψ</span>
         <span class="brand-text">PCUN Youth Forum 2026</span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation menu">☰</button>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+
       <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#themes">Themes</a><a href="#participation">Participation</a><a href="#partners">Partners</a>
-        <a class="nav-cta" href="https://forms.gle/zCBthaSoTLSvH4ps6" target="_blank" rel="noopener">Get Updates<span class="sr-only">, opens in a new tab</span></a>
+        <a href="#about">About</a>
+        <a href="#themes">Themes</a>
+        <a href="#participation">Participation</a>
+        <a href="#organizers">Organizers</a>
+        <a
+          class="nav-cta"
+          href="https://forms.gle/zCBthaSoTLSvH4ps6"
+          target="_blank"
+          rel="noopener"
+        >
+          Get Updates
+          <span class="sr-only">, opens in a new tab</span>
+        </a>
       </nav>
     </div>
   </header>
+
   <main id="main-content">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">2026 Annual PCUN Youth Forum</p>
+          <p class="eyebrow">PCUN Youth Forum 2026</p>
           <h1 id="hero-title">Motivation and Mobilization</h1>
-          <p class="hero-subtitle">Psychology That Empowers Youth Leaders and Their Allies</p>
-          <p>A forthcoming forum bringing together young leaders, researchers, practitioners, and allies to explore how psychological insight can strengthen collective action, belonging, innovation, and sustained engagement.</p>
+          <p class="hero-subtitle">
+            Psychology That Empowers Youth Leaders and Their Allies
+          </p>
+          <p class="organizer-line">
+            Organized by the SPSSI United Nations NGO Team
+          </p>
+          <p class="hero-summary">
+            The 2026 PCUN Youth Forum will bring together young leaders,
+            researchers, practitioners, and allies to explore how psychological
+            insight can strengthen collective action, belonging, innovation,
+            and sustained engagement.
+          </p>
+
           <div class="event-meta" aria-label="Proposed event details">
-            <div class="meta-row"><span class="meta-icon" aria-hidden="true">1</span><div><strong>Date:</strong> To be announced<br><span>Planning window: late October to mid-November 2026</span></div></div>
-            <div class="meta-row"><span class="meta-icon" aria-hidden="true">2</span><div><strong>Proposed location:</strong> United Nations Headquarters, New York</div></div>
+            <div class="meta-row">
+              <span class="meta-icon" aria-hidden="true">1</span>
+              <div>
+                <strong>Date:</strong> To be announced<br>
+                <span>Planning window: late October to mid-November 2026</span>
+              </div>
+            </div>
+
+            <div class="meta-row">
+              <span class="meta-icon" aria-hidden="true">2</span>
+              <div>
+                <strong>Proposed location:</strong>
+                United Nations Headquarters, New York
+              </div>
+            </div>
           </div>
+
           <div class="button-row">
-            <a class="button button-primary" href="https://forms.gle/zCBthaSoTLSvH4ps6" target="_blank" rel="noopener">Join the Mailing List<span class="sr-only">, opens in a new tab</span></a>
-            <a class="button button-secondary" href="#about">Learn About the Forum</a>
+            <a
+              class="button button-primary"
+              href="https://forms.gle/zCBthaSoTLSvH4ps6"
+              target="_blank"
+              rel="noopener"
+            >
+              Join the Mailing List
+              <span class="sr-only">, opens in a new tab</span>
+            </a>
+
+            <a class="button button-secondary" href="#about">
+              Learn About the Forum
+            </a>
           </div>
-          <p class="hero-note">Join the SPSSI United Nations NGO Team mailing list to receive event announcements, registration information, and program updates.</p>
+
+          <p class="hero-note">
+            Join the SPSSI United Nations NGO Team mailing list to receive
+            event announcements, registration information, and program updates.
+          </p>
         </div>
+
         <div class="hero-art" aria-hidden="true">
-          <div class="globe-card"><div class="globe-wordmark"><strong>PCUN</strong><strong>Youth Forum</strong><span>New York · 2026</span></div></div>
+          <div class="globe-card">
+            <div class="globe-wordmark">
+              <strong>PCUN</strong>
+              <strong>Youth Forum</strong>
+              <span>New York · 2026</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="about" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
-        <div><p class="eyebrow">About the Forum</p><h2 id="about-title">Youth leadership is already shaping the future</h2></div>
+        <div>
+          <p class="eyebrow">About the Forum</p>
+          <h2 id="about-title">Youth leadership is already shaping the future</h2>
+        </div>
+
         <div class="about-copy">
-          <p>Young leaders around the world are advancing new approaches to environmental sustainability, mental health, conflict-related displacement, artificial intelligence, racial equity, gender and LGBTQI+ rights, education, and other urgent challenges.</p>
-          <p>The PCUN Youth Forum will create space for young people to share what motivates their work, strengthen connections across communities, and explore how psychology can support meaningful and sustainable collective action.</p>
-          <p>The forum is presented by the Psychology Coalition of NGOs Accredited at the United Nations and is being developed as an interdisciplinary gathering for youth leaders and the people who support them.</p>
+          <p>
+            Young leaders around the world are advancing new approaches to
+            environmental sustainability, mental health, conflict-related
+            displacement, artificial intelligence, racial equity, gender and
+            LGBTQI+ rights, education, and other urgent challenges.
+          </p>
+
+          <p>
+            The PCUN Youth Forum will create space for young people to share
+            what motivates their work, strengthen connections across communities,
+            and explore how psychology can support meaningful and sustainable
+            collective action.
+          </p>
+
+          <p>
+            This year’s forum is organized by the SPSSI United Nations NGO Team
+            in collaboration with the Psychology Coalition at the United Nations.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="themes" id="themes" aria-labelledby="themes-title">
       <div class="container">
-        <div class="section-heading centered"><p class="eyebrow">Thematic Sessions</p><h2 id="themes-title">Five pathways from insight to action</h2><p>The program will connect psychological research with the practical realities of youth leadership, organizing, innovation, and well-being.</p></div>
-        <div class="theme-grid">
-          <article class="theme-card"><span class="theme-number" aria-hidden="true">01</span><h3>Leadership and Collective Action</h3><p>Mobilizing the Next Generation for Peace and Justice</p></article>
-          <article class="theme-card"><span class="theme-number" aria-hidden="true">02</span><h3>Motivation to Action</h3><p>From Psychological Insight to Collective Impact</p></article>
-          <article class="theme-card"><span class="theme-number" aria-hidden="true">03</span><h3>Representation and Belonging</h3><p>Transforming Narratives to Expand Opportunity</p></article>
-          <article class="theme-card"><span class="theme-number" aria-hidden="true">04</span><h3>Youth Innovation and Research</h3><p>Elevating Youth as Knowledge Producers</p></article>
-          <article class="theme-card"><span class="theme-number" aria-hidden="true">05</span><h3>Mental Health and Well-Being</h3><p>Sustaining Engagement Through Psychological Resilience</p></article>
+        <div class="section-heading">
+          <p class="eyebrow">Thematic Sessions</p>
+          <h2 id="themes-title">Program themes</h2>
+          <p>
+            The forum is being developed around five areas connecting
+            psychological research with youth leadership, collective action,
+            innovation, and well-being.
+          </p>
+        </div>
+
+        <div class="theme-list">
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">01</span>
+            <div>
+              <h3>Leadership and Collective Action</h3>
+              <p>Mobilizing the Next Generation for Peace and Justice</p>
+            </div>
+          </article>
+
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">02</span>
+            <div>
+              <h3>Motivation to Action</h3>
+              <p>From Psychological Insight to Collective Impact</p>
+            </div>
+          </article>
+
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">03</span>
+            <div>
+              <h3>Representation and Belonging</h3>
+              <p>Transforming Narratives to Expand Opportunity</p>
+            </div>
+          </article>
+
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">04</span>
+            <div>
+              <h3>Youth Innovation and Research</h3>
+              <p>Elevating Youth as Knowledge Producers</p>
+            </div>
+          </article>
+
+          <article class="theme-item">
+            <span class="theme-number" aria-hidden="true">05</span>
+            <div>
+              <h3>Mental Health and Well-Being</h3>
+              <p>Sustaining Engagement Through Psychological Resilience</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="participation" id="participation" aria-labelledby="participation-title">
+    <section
+      class="participation"
+      id="participation"
+      aria-labelledby="participation-title"
+    >
       <div class="container">
-        <div class="section-heading centered"><p class="eyebrow">Participation</p><h2 id="participation-title">Designed for youth leaders and the people who support them</h2></div>
+        <div class="section-heading centered">
+          <p class="eyebrow">Participation</p>
+          <h2 id="participation-title">
+            Designed for youth leaders and the people who support them
+          </h2>
+        </div>
+
         <div class="audience-grid">
-          <div class="audience-item">Undergraduate students</div><div class="audience-item">Graduate students</div><div class="audience-item">High school students from participating schools</div><div class="audience-item">Youth advocates and organizers</div><div class="audience-item">Researchers and practitioners focused on youth activism</div>
+          <div class="audience-item">Undergraduate students</div>
+          <div class="audience-item">Graduate students</div>
+          <div class="audience-item">
+            High school students from participating schools
+          </div>
+          <div class="audience-item">Youth advocates and organizers</div>
+          <div class="audience-item">
+            Researchers and practitioners focused on youth activism
+          </div>
         </div>
       </div>
     </section>
 
     <section class="updates" id="updates" aria-labelledby="updates-title">
       <div class="container updates-grid">
-        <div><p class="eyebrow" style="color:var(--gold-soft)">Planning Is Underway</p><h2 id="updates-title">Be the first to receive event details</h2><p>The final date, registration process, agenda, speakers, and participation details will be announced as planning continues.</p><a class="button button-primary" style="background:var(--gold);color:var(--navy-dark)" href="https://forms.gle/zCBthaSoTLSvH4ps6" target="_blank" rel="noopener">Get Event Updates<span class="sr-only">, opens in a new tab</span></a></div>
-        <aside class="status-card" aria-label="Current event status"><strong>Current status</strong><p>Date: To be announced</p><p>Venue: United Nations Headquarters proposed</p><p>Registration: Not yet open</p><p>Mailing list: Open</p></aside>
+        <div>
+          <p class="eyebrow" style="color: var(--gold-soft);">
+            Planning Is Underway
+          </p>
+          <h2 id="updates-title">Be the first to receive event details</h2>
+          <p>
+            The final date, registration process, agenda, speakers, and
+            participation details will be announced as planning continues.
+          </p>
+
+          <a
+            class="button button-primary"
+            style="background: var(--gold); color: var(--navy-dark);"
+            href="https://forms.gle/zCBthaSoTLSvH4ps6"
+            target="_blank"
+            rel="noopener"
+          >
+            Get Event Updates
+            <span class="sr-only">, opens in a new tab</span>
+          </a>
+        </div>
+
+        <aside class="status-card" aria-label="Current event status">
+          <strong>Current status</strong>
+          <p>Date: To be announced</p>
+          <p>Venue: United Nations Headquarters proposed</p>
+          <p>Registration: Not yet open</p>
+          <p>Mailing list: Open</p>
+        </aside>
       </div>
     </section>
 
-    <section class="partners" id="partners" aria-labelledby="partners-title">
+    <section
+      class="organizers"
+      id="organizers"
+      aria-labelledby="organizers-title"
+    >
       <div class="container">
-        <div class="section-heading"><p class="eyebrow">Organizers and Partners</p><h2 id="partners-title">Convened through international collaboration</h2></div>
-        <div class="partner-grid">
-          <article class="partner-card"><h3>Presented by</h3><p>Psychology Coalition of NGOs Accredited at the United Nations</p></article>
-          <article class="partner-card"><h3>Event partners</h3><p>Psychology Coalition at the United Nations, Society for the Psychological Study of Social Issues, and World Federation of Youth</p></article>
-          <article class="partner-card"><h3>Invited partner</h3><p>United Nations Office for Disarmament Affairs</p></article>
-          <article class="partner-card"><h3>Event updates</h3><p>Join the <a href="https://forms.gle/zCBthaSoTLSvH4ps6" target="_blank" rel="noopener">SPSSI United Nations NGO Team mailing list<span class="sr-only">, opens in a new tab</span></a>.</p></article>
+        <div class="section-heading">
+          <p class="eyebrow">2026 Organizing Team</p>
+          <h2 id="organizers-title">Organized through international collaboration</h2>
+          <p>
+            The 2026 PCUN Youth Forum is being organized by the SPSSI United
+            Nations NGO Team in collaboration with the Psychology Coalition at
+            the United Nations.
+          </p>
         </div>
-        <div class="contact-panel"><strong>For further information:</strong><br>Dr. David Livert<br>Livert (@) psu (dot) edu</div>
+
+        <div class="organizer-grid">
+          <article class="organizer-panel">
+            <p class="eyebrow">Lead Organizer and Contact</p>
+            <h3>Dr. David Livert</h3>
+            <p class="organizer-role">
+              SPSSI’s Main Representative to the United Nations
+            </p>
+            <p>
+              Dr. Livert serves as a lead organizer for the 2026 PCUN Youth
+              Forum and as the primary contact for further information.
+            </p>
+            <p>
+              <strong>Email:</strong><br>
+              Livert (@) psu (dot) edu
+            </p>
+          </article>
+
+          <div>
+            <ul class="partner-list">
+              <li>
+                <span class="partner-label">Organized by</span>
+                <strong>SPSSI United Nations NGO Team</strong>
+              </li>
+
+              <li>
+                <span class="partner-label">Convened through</span>
+                <strong>Psychology Coalition at the United Nations</strong>
+              </li>
+
+              <li>
+                <span class="partner-label">Collaborating organizations</span>
+                <strong>
+                  Society for the Psychological Study of Social Issues and
+                  World Federation of Youth
+                </strong>
+              </li>
+
+              <li>
+                <span class="partner-label">Invited collaborator</span>
+                <strong>
+                  United Nations Office for Disarmament Affairs
+                </strong>
+              </li>
+            </ul>
+
+            <div class="contact-panel">
+              Join the
+              <a
+                href="https://forms.gle/zCBthaSoTLSvH4ps6"
+                target="_blank"
+                rel="noopener"
+              >
+                SPSSI United Nations NGO Team mailing list
+                <span class="sr-only">, opens in a new tab</span>
+              </a>
+              for event announcements and registration updates.
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><p>PCUN Youth Forum 2026</p><p>Psychology that empowers youth leaders and their allies.</p></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>PCUN Youth Forum 2026</p>
+      <p>Psychology that empowers youth leaders and their allies.</p>
+    </div>
+  </footer>
+
   <script>
-    const menuButton=document.querySelector(".menu-toggle");
-    const navigation=document.querySelector(".site-nav");
-    menuButton.addEventListener("click",()=>{const isOpen=navigation.classList.toggle("is-open");menuButton.setAttribute("aria-expanded",String(isOpen));menuButton.setAttribute("aria-label",isOpen?"Close navigation menu":"Open navigation menu")});
-    navigation.querySelectorAll("a").forEach(link=>{link.addEventListener("click",()=>{navigation.classList.remove("is-open");menuButton.setAttribute("aria-expanded","false");menuButton.setAttribute("aria-label","Open navigation menu")})});
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".site-nav");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navigation.classList.toggle("is-open");
+
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+      });
+    });
   </script>
 </body>
 </html>
